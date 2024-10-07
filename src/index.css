@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.header-general{
+    padding: 2rem 4rem;
+    border-bottom: 2px solid #EAEAEA;
 }
+.header-title{
+    color: #9D9D9D;
+font-size: 14px;
+font-weight: 400;
+
+}
+.container{
+    padding: 2.5rem 0;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.input-search{
+ 
+    border-radius: 16px ;
+    padding: 12px 17px ;
+    border: 1px solid #F3F3F3
+    
+    }
+    .card-container{
+        display: flex;
+        align-items: center;
+       flex-wrap: wrap;
+       flex-direction: column;
+       border-radius: 32px;
+       border:  1px solid #F8F8F8;
+       width: 250px;
+       margin: 0 auto;
+       position: relative;
+       
+    }
+    .card-container:hover{
+        border:  2px solid #F8F8F8;
+
+        box-shadow: 0px 14px 30px 0px #0000000D;
+        ;
+    }
+    .card-like{
+        
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: #9D9D9D;
+        font-size: 2rem;
+        padding: 5px ;
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+    }
+    .card-container p{
+    font-size: 14px;
+    font-weight: 500;
+    width: 150px;
+    
+    }
+
+    .icon{
+        color: #9D9D9D;
+        font-size: 2rem;
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+        padding: 5px;
+    }
+    @media (max-width:1350px) {
+        .card-block{
+             grid-template-columns: repeat(3,1fr);
+        }
+    }
+    @media (max-width:970px) {
+        .card-block{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    @media (max-width:600px) {
+        .card-block{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    
+

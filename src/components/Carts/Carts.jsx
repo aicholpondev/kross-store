@@ -33,7 +33,7 @@ export default function Carts({cart, setCart}) {
                                     </div>
                                     <div className='ml-10 pt-5'>
 
-                                       <p className='font-bold'>{item.title}</p>
+                                       <p className='font-bold'>{item.name}</p>
                                   
                                   <div className='my-8'>
                                         <p>{item.price} руб</p>
